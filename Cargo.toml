@@ -1,0 +1,21 @@
+[package]
+name = "manipulate-lib"
+authors = ["Foahh"]
+description = "Multimedia manipulation library for me"
+license = "MIT / Apache-2.0"
+repository = "https://github.com/PenguinHot/manipulate-lib"
+version = "1.0.0"
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+image = "0.25"
+directxtex = "1.3" # use https://crates.io/crates/dds once it is stable
+anyhow = "1.0"
+
+[dev-dependencies]
+rand = "0.9.1"
+
+[lib]
+crate-type = ["cdylib"]
+name = "mua_lib"
