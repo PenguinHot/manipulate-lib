@@ -19,3 +19,7 @@ rand = "0.9.1"
 [lib]
 crate-type = ["cdylib"]
 name = "mua_lib"
+
+[profile.release]
+strip = "symbols"
+lto = true
